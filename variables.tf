@@ -114,3 +114,9 @@ variable "machine_type" {
   default     = "n1-standard-1"
   type        = string
 }
+
+variable "custom_init_commands" {
+  description = "Any custom commands which should be run after bootstrapping the Elasticsearch cluster"
+  default     = ""
+  type        = string
+}

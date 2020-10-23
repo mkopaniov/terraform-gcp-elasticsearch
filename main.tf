@@ -115,6 +115,9 @@ bash /tmp/bootstrap.sh
 
 systemctl restart google-fluentd.service
 systemctl start elasticsearch.service
+
+${var.custom_init_commands}
+
   EOT
   }
 
